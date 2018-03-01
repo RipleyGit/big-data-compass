@@ -2,6 +2,7 @@ package me.seaof.job.service.Impl;
 
 import com.alibaba.fastjson.JSON;
 import me.seaof.job.common.GetCityList;
+import me.seaof.job.common.JedisStateCode;
 import me.seaof.job.jsoup.AnalyzeZhaopin;
 import me.seaof.job.service.ZhaopinDataService;
 import me.seaof.job.vo.City;
@@ -27,7 +28,7 @@ public class ZhaopinDataServiceImpl implements ZhaopinDataService{
 
     private static final String ZPIN_URL = "http://sou.zhaopin.com/jobs/searchresult.ashx?jl=";
 
-    private static final long TIME_OUT = 20L; //
+    private static final long TIME_OUT = 72000L; // 设置失效时间为20小时
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
@@ -58,6 +59,9 @@ public class ZhaopinDataServiceImpl implements ZhaopinDataService{
     private String doGetJobInfo(String key) {
         String strBody = null;
         // 先查缓存，缓存有的取缓存中的数据
+
+        key = key + JedisStateCode.ALL_JOB; //使用日期加标识码作为Redis唯一标识符
+
         ValueOperations<String, String> ops = stringRedisTemplate.opsForValue();
         if (stringRedisTemplate.hasKey(key)) {
             logger.info("Redis has data");
@@ -76,7 +80,7 @@ public class ZhaopinDataServiceImpl implements ZhaopinDataService{
                 e.printStackTrace();
             }
             // 数据写入缓存
-            ops.set(key, strBody, TIME_OUT, TimeUnit.HOURS);
+            ops.set(key, strBody, TIME_OUT, TimeUnit.SECONDS);
         }
         return strBody;
     }

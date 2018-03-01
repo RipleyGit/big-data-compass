@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
  * Creat By Watter @DATA
  */
 public class QuartzConfiguration {
-    private static final int TIME = 42000; // 更新频率
+    private static final int TIME = 28400; // 更新频率 8小时更新一次
 
     // JobDetail
     @Bean
