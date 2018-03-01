@@ -1,0 +1,10 @@
+# 热部署静态文件
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+# 指定Redis远程地址和端口号
+  redis:
+    host: 115.159.161.148
+    port: 6379

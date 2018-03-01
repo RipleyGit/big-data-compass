@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta name="viewport"
+             content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 100%"></div>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+       <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+       <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+       <script>
+           $(function(){
+               $.ajax({
+                   type : "get",
+                   url : "/job/mapData",
+                   //dataType:"json",
+                   cache : false,
+                   async : false,
+                   success : function(result) {
+                       var res = [];
+                       console.log(result)
+                       for (var i = 0; i < result.length; i++) {
+                           //获得每个城市的统计数量
+                           var count = result[i].val;
+                           //获得经纬度
+                           var geo = [ result[i].geos ]
+                           res.push({
+                               name : result[i].Cname,
+                               //两个字符串拼接
+                               value : geo.concat(count),
+                           });
+                       }
+                       // 基于准备好的dom，初始化echarts实例
+                       var myChart = echarts.init(document.getElementById('first'));
+                       //var option = {
+                       myChart.setOption({
+                           backgroundColor : '#404a59',
+                           title : {
+                               text : '全国用户地理位置分布图',
+                               subtext : 'data from PM25.in',
+                               sublink : 'http://www.pm25.in',
+                               left : 'center',
+                               textStyle : {
+                                   color : '#fff'
+                               }
+                           },
+                           tooltip : {
+                               trigger : 'item'
+                           },
+                           legend : {
+                               orient : 'vertical',
+                               y : 'bottom',
+                               x : 'right',
+                               data : [ 'pm2.5' ],
+                               textStyle : {
+                                   color : '#fff'
+                               }
+                           },
+                           geo : {
+                               map : 'china',
+                               label : {
+                                   emphasis : {
+                                       show : false
+                                   }
+                               },
+                               roam : true,
+                               itemStyle : {
+                                   normal : {
+                                       areaColor : '#323c48',
+                                       borderColor : '#111'
+                                   },
+                                   emphasis : {
+                                       areaColor : '#2a333d'
+                                   }
+                               }
+                           },
+                           series : [ {
+                               //name: 'pm2.5',
+                               type : 'scatter',
+                               coordinateSystem : 'geo',
+                               data : res,
+                               symbolSize : function(vals) {
+                                   return vals[2] / 10;
+                               },
+                               label : {
+                                   normal : {
+                                       formatter : '{b}',
+                                       position : 'right',
+                                       show : false
+                                   },
+                                   emphasis : {
+                                       show : true
+                                   }
+                               },
+                               itemStyle : {
+                                   normal : {
+                                       color : '#ddb926'
+                                   }
+                               }
+                           }, {
+                               name : 'Top',
+                               type : 'effectScatter',
+                               coordinateSystem : 'geo',
+                               data : res.slice(0, 6),
+                               symbolSize : function(vals) {
+                                   return vals[2] / 10;
+                               },
+                               showEffectOn : 'render',
+                               rippleEffect : {
+                                   brushType : 'stroke'
+                               },
+                               hoverAnimation : true,
+                               label : {
+                                   normal : {
+                                       formatter : '{b}',
+                                       position : 'right',
+                                       show : true
+                                   }
+                               },
+                               itemStyle : {
+                                   normal : {
+                                       color : '#f4e925',
+                                       shadowBlur : 10,
+                                       shadowColor : '#333'
+                                   }
+                               },
+                               zlevel : 1
+                           } ]
+                       });
+                   }
+               })
+           });
+       </script>
+   </body>
+</html>
