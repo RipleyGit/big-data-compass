@@ -1,193 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <c c1="0">
-<d cname="海门" value="9" geo="121.15,31.89"/>
-<d cname="鄂尔多斯" value="12" geo="109.781327,39.608266"/>
-<d cname="招远" value="12" geo="120.38,37.35"/>
-<d cname="舟山" value="12" geo="122.207216,29.985295"/>
-<d cname="齐齐哈尔" value="14" geo="123.97,47.33"/>
-<d cname="盐城" value="15" geo="120.13,33.38"/>
-<d cname="赤峰" value="16" geo="118.87,42.28"/>
-<d cname="青岛" value="18" geo="120.33,36.07"/>
-<d cname="乳山" value="18" geo="121.52,36.89"/>
-<d cname="金昌" value="19" geo="102.188043,38.520089"/>
-<d cname="泉州" value="21" geo="118.58,24.93"/>
-<d cname="莱西" value="21" geo="120.53,36.86"/>
-<d cname="日照" value="21" geo="119.46,35.42"/>
-<d cname="胶南" value="22" geo="119.97,35.88"/>
-<d cname="南通" value="23" geo="121.05,32.08"/>
-<d cname="拉萨" value="24" geo="91.11,29.97"/>
-<d cname="云浮" value="24" geo="112.02,22.93"/>
-<d cname="梅州" value="25" geo="116.1,24.55"/>
-<d cname="文登" value="25" geo="122.05,37.2"/>
-<d cname="上海" value="25" geo="121.48,31.22"/>
-<d cname="攀枝花" value="25" geo="101.718637,26.582347"/>
-<d cname="威海" value="25" geo="122.1,37.5"/>
-<d cname="承德" value="25" geo="117.93,40.97"/>
-<d cname="厦门" value="26" geo="118.1,24.46"/>
-<d cname="汕尾" value="26" geo="115.375279,22.786211"/>
-<d cname="潮州" value="26" geo="116.63,23.68"/>
-<d cname="丹东" value="27" geo="124.37,40.13"/>
-<d cname="太仓" value="27" geo="121.1,31.45"/>
-<d cname="曲靖" value="27" geo="103.79,25.51"/>
-<d cname="烟台" value="28" geo="121.39,37.52"/>
-<d cname="福州" value="29" geo="119.3,26.08"/>
-<d cname="瓦房店" value="30" geo="121.979603,39.627114"/>
-<d cname="即墨" value="30" geo="120.45,36.38"/>
-<d cname="抚顺" value="31" geo="123.97,41.97"/>
-<d cname="玉溪" value="31" geo="102.52,24.35"/>
-<d cname="张家口" value="31" geo="114.87,40.82"/>
-<d cname="阳泉" value="31" geo="113.57,37.85"/>
-<d cname="莱州" value="32" geo="119.942327,37.177017"/>
-<d cname="湖州" value="32" geo="120.1,30.86"/>
-<d cname="汕头" value="32" geo="116.69,23.39"/>
-<d cname="昆山" value="33" geo="120.95,31.39"/>
-<d cname="宁波" value="33" geo="121.56,29.86"/>
-<d cname="湛江" value="33" geo="110.359377,21.270708"/>
-<d cname="揭阳" value="34" geo="116.35,23.55"/>
-<d cname="荣成" value="34" geo="122.41,37.16"/>
-<d cname="连云港" value="35" geo="119.16,34.59"/>
-<d cname="葫芦岛" value="35" geo="120.836932,40.711052"/>
-<d cname="常熟" value="36" geo="120.74,31.64"/>
-<d cname="东莞" value="36" geo="113.75,23.04"/>
-<d cname="河源" value="36" geo="114.68,23.73"/>
-<d cname="淮安" value="36" geo="119.15,33.5"/>
-<d cname="泰州" value="36" geo="119.9,32.49"/>
-<d cname="南宁" value="37" geo="108.33,22.84"/>
-<d cname="营口" value="37" geo="122.18,40.65"/>
-<d cname="惠州" value="37" geo="114.4,23.09"/>
-<d cname="江阴" value="37" geo="120.26,31.91"/>
-<d cname="蓬莱" value="37" geo="120.75,37.8"/>
-<d cname="韶关" value="38" geo="113.62,24.84"/>
-<d cname="嘉峪关" value="38" geo="98.289152,39.77313"/>
-<d cname="广州" value="38" geo="113.23,23.16"/>
-<d cname="延安" value="38" geo="109.47,36.6"/>
-<d cname="太原" value="39" geo="112.53,37.87"/>
-<d cname="清远" value="39" geo="113.01,23.7"/>
-<d cname="中山" value="39" geo="113.38,22.52"/>
-<d cname="昆明" value="39" geo="102.73,25.04"/>
-<d cname="寿光" value="40" geo="118.73,36.86"/>
-<d cname="盘锦" value="40" geo="122.070714,41.119997"/>
-<d cname="长治" value="41" geo="113.08,36.18"/>
-<d cname="深圳" value="41" geo="114.07,22.62"/>
-<d cname="珠海" value="42" geo="113.52,22.3"/>
-<d cname="宿迁" value="43" geo="118.3,33.96"/>
-<d cname="咸阳" value="43" geo="108.72,34.36"/>
-<d cname="铜川" value="44" geo="109.11,35.09"/>
-<d cname="平度" value="44" geo="119.97,36.77"/>
-<d cname="佛山" value="44" geo="113.11,23.05"/>
-<d cname="海口" value="44" geo="110.35,20.02"/>
-<d cname="江门" value="45" geo="113.06,22.61"/>
-<d cname="章丘" value="45" geo="117.53,36.72"/>
-<d cname="肇庆" value="46" geo="112.44,23.05"/>
-<d cname="大连" value="47" geo="121.62,38.92"/>
-<d cname="临汾" value="47" geo="111.5,36.08"/>
-<d cname="吴江" value="47" geo="120.63,31.16"/>
-<d cname="石嘴山" value="49" geo="106.39,39.04"/>
-<d cname="沈阳" value="50" geo="123.38,41.8"/>
-<d cname="苏州" value="50" geo="120.62,31.32"/>
-<d cname="茂名" value="50" geo="110.88,21.68"/>
-<d cname="嘉兴" value="51" geo="120.76,30.77"/>
-<d cname="长春" value="51" geo="125.35,43.88"/>
-<d cname="胶州" value="52" geo="120.03336,36.264622"/>
-<d cname="银川" value="52" geo="106.27,38.47"/>
-<d cname="张家港" value="52" geo="120.555821,31.875428"/>
-<d cname="三门峡" value="53" geo="111.19,34.76"/>
-<d cname="锦州" value="54" geo="121.15,41.13"/>
-<d cname="南昌" value="54" geo="115.89,28.68"/>
-<d cname="柳州" value="54" geo="109.4,24.33"/>
-<d cname="三亚" value="54" geo="109.511909,18.252847"/>
-<d cname="自贡" value="56" geo="104.778442,29.33903"/>
-<d cname="吉林" value="56" geo="126.57,43.87"/>
-<d cname="阳江" value="57" geo="111.95,21.85"/>
-<d cname="泸州" value="57" geo="105.39,28.91"/>
-<d cname="西宁" value="57" geo="101.74,36.56"/>
-<d cname="宜宾" value="58" geo="104.56,29.77"/>
-<d cname="呼和浩特" value="58" geo="111.65,40.82"/>
-<d cname="成都" value="58" geo="104.06,30.67"/>
-<d cname="大同" value="58" geo="113.3,40.12"/>
-<d cname="镇江" value="59" geo="119.44,32.2"/>
-<d cname="桂林" value="59" geo="110.28,25.29"/>
-<d cname="张家界" value="59" geo="110.479191,29.117096"/>
-<d cname="宜兴" value="59" geo="119.82,31.36"/>
-<d cname="北海" value="60" geo="109.12,21.49"/>
-<d cname="西安" value="61" geo="108.95,34.27"/>
-<d cname="金坛" value="62" geo="119.56,31.74"/>
-<d cname="东营" value="62" geo="118.49,37.46"/>
-<d cname="牡丹江" value="63" geo="129.58,44.6"/>
-<d cname="遵义" value="63" geo="106.9,27.7"/>
-<d cname="绍兴" value="63" geo="120.58,30.01"/>
-<d cname="扬州" value="64" geo="119.42,32.39"/>
-<d cname="常州" value="64" geo="119.95,31.79"/>
-<d cname="潍坊" value="65" geo="119.1,36.62"/>
-<d cname="重庆" value="66" geo="106.54,29.59"/>
-<d cname="台州" value="67" geo="121.420757,28.656386"/>
-<d cname="南京" value="67" geo="118.78,32.04"/>
-<d cname="滨州" value="70" geo="118.03,37.36"/>
-<d cname="贵阳" value="71" geo="106.71,26.57"/>
-<d cname="无锡" value="71" geo="120.29,31.59"/>
-<d cname="本溪" value="71" geo="123.73,41.3"/>
-<d cname="克拉玛依" value="72" geo="84.77,45.59"/>
-<d cname="渭南" value="72" geo="109.5,34.52"/>
-<d cname="马鞍山" value="72" geo="118.48,31.56"/>
-<d cname="宝鸡" value="72" geo="107.15,34.38"/>
-<d cname="焦作" value="75" geo="113.21,35.24"/>
-<d cname="句容" value="75" geo="119.16,31.95"/>
-<d cname="北京" value="79" geo="116.46,39.92"/>
-<d cname="徐州" value="79" geo="117.2,34.26"/>
-<d cname="衡水" value="80" geo="115.72,37.72"/>
-<d cname="包头" value="80" geo="110,40.58"/>
-<d cname="绵阳" value="80" geo="104.73,31.48"/>
-<d cname="乌鲁木齐" value="84" geo="87.68,43.77"/>
-<d cname="枣庄" value="84" geo="117.57,34.86"/>
-<d cname="杭州" value="84" geo="120.19,30.26"/>
-<d cname="淄博" value="85" geo="118.05,36.78"/>
-<d cname="鞍山" value="86" geo="122.85,41.12"/>
-<d cname="溧阳" value="86" geo="119.48,31.43"/>
-<d cname="库尔勒" value="86" geo="86.06,41.68"/>
-<d cname="安阳" value="90" geo="114.35,36.1"/>
-<d cname="开封" value="90" geo="114.35,34.79"/>
-<d cname="济南" value="92" geo="117,36.65"/>
-<d cname="德阳" value="93" geo="104.37,31.13"/>
-<d cname="温州" value="95" geo="120.65,28.01"/>
-<d cname="九江" value="96" geo="115.97,29.71"/>
-<d cname="邯郸" value="98" geo="114.47,36.6"/>
-<d cname="临安" value="99" geo="119.72,30.23"/>
-<d cname="兰州" value="99" geo="103.73,36.03"/>
-<d cname="沧州" value="100" geo="116.83,38.33"/>
-<d cname="临沂" value="103" geo="118.35,35.05"/>
-<d cname="南充" value="104" geo="106.110698,30.837793"/>
-<d cname="天津" value="105" geo="117.2,39.13"/>
-<d cname="富阳" value="106" geo="119.95,30.07"/>
-<d cname="泰安" value="112" geo="117.13,36.18"/>
-<d cname="诸暨" value="112" geo="120.23,29.71"/>
-<d cname="郑州" value="113" geo="113.65,34.76"/>
-<d cname="哈尔滨" value="114" geo="126.63,45.75"/>
-<d cname="聊城" value="116" geo="115.97,36.45"/>
-<d cname="芜湖" value="117" geo="118.38,31.33"/>
-<d cname="唐山" value="119" geo="118.02,39.63"/>
-<d cname="平顶山" value="119" geo="113.29,33.75"/>
-<d cname="邢台" value="119" geo="114.48,37.05"/>
-<d cname="德州" value="120" geo="116.29,37.45"/>
-<d cname="济宁" value="120" geo="116.59,35.38"/>
-<d cname="荆州" value="127" geo="112.239741,30.335165"/>
-<d cname="宜昌" value="130" geo="111.3,30.7"/>
-<d cname="义乌" value="132" geo="120.06,29.32"/>
-<d cname="丽水" value="133" geo="119.92,28.45"/>
-<d cname="洛阳" value="134" geo="112.44,34.7"/>
-<d cname="秦皇岛" value="136" geo="119.57,39.95"/>
-<d cname="株洲" value="143" geo="113.16,27.83"/>
-<d cname="石家庄" value="147" geo="114.48,38.03"/>
-<d cname="莱芜" value="148" geo="117.67,36.19"/>
-<d cname="常德" value="152" geo="111.69,29.05"/>
-<d cname="保定" value="153" geo="115.48,38.85"/>
-<d cname="湘潭" value="154" geo="112.91,27.87"/>
-<d cname="金华" value="157" geo="119.64,29.12"/>
-<d cname="岳阳" value="169" geo="113.09,29.37"/>
-<d cname="长沙" value="175" geo="113,28.21"/>
-<d cname="衢州" value="177" geo="118.88,28.97"/>
-<d cname="廊坊" value="193" geo="116.7,39.53"/>
-<d cname="菏泽" value="194" geo="115.480656,35.23375"/>
-<d cname="合肥" value="229" geo="117.27,31.86"/>
-<d cname="武汉" value="273" geo="114.31,30.52"/>
-<d cname="大庆" value="279" geo="125.03,46.58"/>
+<d cname="海门" value="9" longitude="121.15" latitude="31.89"/>
+<d cname="鄂尔多斯" value="12" longitude="109.781327" latitude="39.608266"/>
+<d cname="招远" value="12" longitude="120.38" latitude="37.35"/>
+<d cname="舟山" value="12" longitude="122.207216" latitude="29.985295"/>
+<d cname="齐齐哈尔" value="14" longitude="123.97" latitude="47.33"/>
+<d cname="盐城" value="15" longitude="120.13" latitude="33.38"/>
+<d cname="赤峰" value="16" longitude="118.87" latitude="42.28"/>
+<d cname="青岛" value="18" longitude="120.33" latitude="36.07"/>
+<d cname="乳山" value="18" longitude="121.52" latitude="36.89"/>
+<d cname="金昌" value="19" longitude="102.188043" latitude="38.520089"/>
+<d cname="泉州" value="21" longitude="118.58" latitude="24.93"/>
+<d cname="莱西" value="21" longitude="120.53" latitude="36.86"/>
+<d cname="日照" value="21" longitude="119.46" latitude="35.42"/>
+<d cname="胶南" value="22" longitude="119.97" latitude="35.88"/>
+<d cname="南通" value="23" longitude="121.05" latitude="32.08"/>
+<d cname="拉萨" value="24" longitude="91.11" latitude="29.97"/>
+<d cname="云浮" value="24" longitude="112.02" latitude="22.93"/>
+<d cname="梅州" value="25" longitude="116.1" latitude="24.55"/>
+<d cname="文登" value="25" longitude="122.05" latitude="37.2"/>
+<d cname="上海" value="25" longitude="121.48" latitude="31.22"/>
+<d cname="攀枝花" value="25" longitude="101.718637" latitude="26.582347"/>
+<d cname="威海" value="25" longitude="122.1" latitude="37.5"/>
+<d cname="承德" value="25" longitude="117.93" latitude="40.97"/>
+<d cname="厦门" value="26" longitude="118.1" latitude="24.46"/>
+<d cname="汕尾" value="26" longitude="115.375279" latitude="22.786211"/>
+<d cname="潮州" value="26" longitude="116.63" latitude="23.68"/>
+<d cname="丹东" value="27" longitude="124.37" latitude="40.13"/>
+<d cname="太仓" value="27" longitude="121.1" latitude="31.45"/>
+<d cname="曲靖" value="27" longitude="103.79" latitude="25.51"/>
+<d cname="烟台" value="28" longitude="121.39" latitude="37.52"/>
+<d cname="福州" value="29" longitude="119.3" latitude="26.08"/>
+<d cname="瓦房店" value="30" longitude="121.979603" latitude="39.627114"/>
+<d cname="即墨" value="30" longitude="120.45" latitude="36.38"/>
+<d cname="抚顺" value="31" longitude="123.97" latitude="41.97"/>
+<d cname="玉溪" value="31" longitude="102.52" latitude="24.35"/>
+<d cname="张家口" value="31" longitude="114.87" latitude="40.82"/>
+<d cname="阳泉" value="31" longitude="113.57" latitude="37.85"/>
+<d cname="莱州" value="32" longitude="119.942327" latitude="37.177017"/>
+<d cname="湖州" value="32" longitude="120.1" latitude="30.86"/>
+<d cname="汕头" value="32" longitude="116.69" latitude="23.39"/>
+<d cname="昆山" value="33" longitude="120.95" latitude="31.39"/>
+<d cname="宁波" value="33" longitude="121.56" latitude="29.86"/>
+<d cname="湛江" value="33" longitude="110.359377" latitude="21.270708"/>
+<d cname="揭阳" value="34" longitude="116.35" latitude="23.55"/>
+<d cname="荣成" value="34" longitude="122.41" latitude="37.16"/>
+<d cname="连云港" value="35" longitude="119.16" latitude="34.59"/>
+<d cname="葫芦岛" value="35" longitude="120.836932" latitude="40.711052"/>
+<d cname="常熟" value="36" longitude="120.74" latitude="31.64"/>
+<d cname="东莞" value="36" longitude="113.75" latitude="23.04"/>
+<d cname="河源" value="36" longitude="114.68" latitude="23.73"/>
+<d cname="淮安" value="36" longitude="119.15" latitude="33.5"/>
+<d cname="泰州" value="36" longitude="119.9" latitude="32.49"/>
+<d cname="南宁" value="37" longitude="108.33" latitude="22.84"/>
+<d cname="营口" value="37" longitude="122.18" latitude="40.65"/>
+<d cname="惠州" value="37" longitude="114.4" latitude="23.09"/>
+<d cname="江阴" value="37" longitude="120.26" latitude="31.91"/>
+<d cname="蓬莱" value="37" longitude="120.75" latitude="37.8"/>
+<d cname="韶关" value="38" longitude="113.62" latitude="24.84"/>
+<d cname="嘉峪关" value="38" longitude="98.289152" latitude="39.77313"/>
+<d cname="广州" value="38" longitude="113.23" latitude="23.16"/>
+<d cname="延安" value="38" longitude="109.47" latitude="36.6"/>
+<d cname="太原" value="39" longitude="112.53" latitude="37.87"/>
+<d cname="清远" value="39" longitude="113.01" latitude="23.7"/>
+<d cname="中山" value="39" longitude="113.38" latitude="22.52"/>
+<d cname="昆明" value="39" longitude="102.73" latitude="25.04"/>
+<d cname="寿光" value="40" longitude="118.73" latitude="36.86"/>
+<d cname="盘锦" value="40" longitude="122.070714" latitude="41.119997"/>
+<d cname="长治" value="41" longitude="113.08" latitude="36.18"/>
+<d cname="深圳" value="41" longitude="114.07" latitude="22.62"/>
+<d cname="珠海" value="42" longitude="113.52" latitude="22.3"/>
+<d cname="宿迁" value="43" longitude="118.3" latitude="33.96"/>
+<d cname="咸阳" value="43" longitude="108.72" latitude="34.36"/>
+<d cname="铜川" value="44" longitude="109.11" latitude="35.09"/>
+<d cname="平度" value="44" longitude="119.97" latitude="36.77"/>
+<d cname="佛山" value="44" longitude="113.11" latitude="23.05"/>
+<d cname="海口" value="44" longitude="110.35" latitude="20.02"/>
+<d cname="江门" value="45" longitude="113.06" latitude="22.61"/>
+<d cname="章丘" value="45" longitude="117.53" latitude="36.72"/>
+<d cname="肇庆" value="46" longitude="112.44" latitude="23.05"/>
+<d cname="大连" value="47" longitude="121.62" latitude="38.92"/>
+<d cname="临汾" value="47" longitude="111.5" latitude="36.08"/>
+<d cname="吴江" value="47" longitude="120.63" latitude="31.16"/>
+<d cname="石嘴山" value="49" longitude="106.39" latitude="39.04"/>
+<d cname="沈阳" value="50" longitude="123.38" latitude="41.8"/>
+<d cname="苏州" value="50" longitude="120.62" latitude="31.32"/>
+<d cname="茂名" value="50" longitude="110.88" latitude="21.68"/>
+<d cname="嘉兴" value="51" longitude="120.76" latitude="30.77"/>
+<d cname="长春" value="51" longitude="125.35" latitude="43.88"/>
+<d cname="胶州" value="52" longitude="120.03336" latitude="36.264622"/>
+<d cname="银川" value="52" longitude="106.27" latitude="38.47"/>
+<d cname="张家港" value="52" longitude="120.555821" latitude="31.875428"/>
+<d cname="三门峡" value="53" longitude="111.19" latitude="34.76"/>
+<d cname="锦州" value="54" longitude="121.15" latitude="41.13"/>
+<d cname="南昌" value="54" longitude="115.89" latitude="28.68"/>
+<d cname="柳州" value="54" longitude="109.4" latitude="24.33"/>
+<d cname="三亚" value="54" longitude="109.511909" latitude="18.252847"/>
+<d cname="自贡" value="56" longitude="104.778442" latitude="29.33903"/>
+<d cname="吉林" value="56" longitude="126.57" latitude="43.87"/>
+<d cname="阳江" value="57" longitude="111.95" latitude="21.85"/>
+<d cname="泸州" value="57" longitude="105.39" latitude="28.91"/>
+<d cname="西宁" value="57" longitude="101.74" latitude="36.56"/>
+<d cname="宜宾" value="58" longitude="104.56" latitude="29.77"/>
+<d cname="呼和浩特" value="58" longitude="111.65" latitude="40.82"/>
+<d cname="成都" value="58" longitude="104.06" latitude="30.67"/>
+<d cname="大同" value="58" longitude="113.3" latitude="40.12"/>
+<d cname="镇江" value="59" longitude="119.44" latitude="32.2"/>
+<d cname="桂林" value="59" longitude="110.28" latitude="25.29"/>
+<d cname="张家界" value="59" longitude="110.479191" latitude="29.117096"/>
+<d cname="宜兴" value="59" longitude="119.82" latitude="31.36"/>
+<d cname="北海" value="60" longitude="109.12" latitude="21.49"/>
+<d cname="西安" value="61" longitude="108.95" latitude="34.27"/>
+<d cname="金坛" value="62" longitude="119.56" latitude="31.74"/>
+<d cname="东营" value="62" longitude="118.49" latitude="37.46"/>
+<d cname="牡丹江" value="63" longitude="129.58" latitude="44.6"/>
+<d cname="遵义" value="63" longitude="106.9" latitude="27.7"/>
+<d cname="绍兴" value="63" longitude="120.58" latitude="30.01"/>
+<d cname="扬州" value="64" longitude="119.42" latitude="32.39"/>
+<d cname="常州" value="64" longitude="119.95" latitude="31.79"/>
+<d cname="潍坊" value="65" longitude="119.1" latitude="36.62"/>
+<d cname="重庆" value="66" longitude="106.54" latitude="29.59"/>
+<d cname="台州" value="67" longitude="121.420757" latitude="28.656386"/>
+<d cname="南京" value="67" longitude="118.78" latitude="32.04"/>
+<d cname="滨州" value="70" longitude="118.03" latitude="37.36"/>
+<d cname="贵阳" value="71" longitude="106.71" latitude="26.57"/>
+<d cname="无锡" value="71" longitude="120.29" latitude="31.59"/>
+<d cname="本溪" value="71" longitude="123.73" latitude="41.3"/>
+<d cname="克拉玛依" value="72" longitude="84.77" latitude="45.59"/>
+<d cname="渭南" value="72" longitude="109.5" latitude="34.52"/>
+<d cname="马鞍山" value="72" longitude="118.48" latitude="31.56"/>
+<d cname="宝鸡" value="72" longitude="107.15" latitude="34.38"/>
+<d cname="焦作" value="75" longitude="113.21" latitude="35.24"/>
+<d cname="句容" value="75" longitude="119.16" latitude="31.95"/>
+<d cname="北京" value="79" longitude="116.46" latitude="39.92"/>
+<d cname="徐州" value="79" longitude="117.2" latitude="34.26"/>
+<d cname="衡水" value="80" longitude="115.72" latitude="37.72"/>
+<d cname="包头" value="80" longitude="110" latitude="40.58"/>
+<d cname="绵阳" value="80" longitude="104.73" latitude="31.48"/>
+<d cname="乌鲁木齐" value="84" longitude="87.68" latitude="43.77"/>
+<d cname="枣庄" value="84" longitude="117.57" latitude="34.86"/>
+<d cname="杭州" value="84" longitude="120.19" latitude="30.26"/>
+<d cname="淄博" value="85" longitude="118.05" latitude="36.78"/>
+<d cname="鞍山" value="86" longitude="122.85" latitude="41.12"/>
+<d cname="溧阳" value="86" longitude="119.48" latitude="31.43"/>
+<d cname="库尔勒" value="86" longitude="86.06" latitude="41.68"/>
+<d cname="安阳" value="90" longitude="114.35" latitude="36.1"/>
+<d cname="开封" value="90" longitude="114.35" latitude="34.79"/>
+<d cname="济南" value="92" longitude="117" latitude="36.65"/>
+<d cname="德阳" value="93" longitude="104.37" latitude="31.13"/>
+<d cname="温州" value="95" longitude="120.65" latitude="28.01"/>
+<d cname="九江" value="96" longitude="115.97" latitude="29.71"/>
+<d cname="邯郸" value="98" longitude="114.47" latitude="36.6"/>
+<d cname="临安" value="99" longitude="119.72" latitude="30.23"/>
+<d cname="兰州" value="99" longitude="103.73" latitude="36.03"/>
+<d cname="沧州" value="100" longitude="116.83" latitude="38.33"/>
+<d cname="临沂" value="103" longitude="118.35" latitude="35.05"/>
+<d cname="南充" value="104" longitude="106.110698" latitude="30.837793"/>
+<d cname="天津" value="105" longitude="117.2" latitude="39.13"/>
+<d cname="富阳" value="106" longitude="119.95" latitude="30.07"/>
+<d cname="泰安" value="112" longitude="117.13" latitude="36.18"/>
+<d cname="诸暨" value="112" longitude="120.23" latitude="29.71"/>
+<d cname="郑州" value="113" longitude="113.65" latitude="34.76"/>
+<d cname="哈尔滨" value="114" longitude="126.63" latitude="45.75"/>
+<d cname="聊城" value="116" longitude="115.97" latitude="36.45"/>
+<d cname="芜湖" value="117" longitude="118.38" latitude="31.33"/>
+<d cname="唐山" value="119" longitude="118.02" latitude="39.63"/>
+<d cname="平顶山" value="119" longitude="113.29" latitude="33.75"/>
+<d cname="邢台" value="119" longitude="114.48" latitude="37.05"/>
+<d cname="德州" value="120" longitude="116.29" latitude="37.45"/>
+<d cname="济宁" value="120" longitude="116.59" latitude="35.38"/>
+<d cname="荆州" value="127" longitude="112.239741" latitude="30.335165"/>
+<d cname="宜昌" value="130" longitude="111.3" latitude="30.7"/>
+<d cname="义乌" value="132" longitude="120.06" latitude="29.32"/>
+<d cname="丽水" value="133" longitude="119.92" latitude="28.45"/>
+<d cname="洛阳" value="134" longitude="112.44" latitude="34.7"/>
+<d cname="秦皇岛" value="136" longitude="119.57" latitude="39.95"/>
+<d cname="株洲" value="143" longitude="113.16" latitude="27.83"/>
+<d cname="石家庄" value="147" longitude="114.48" latitude="38.03"/>
+<d cname="莱芜" value="148" longitude="117.67" latitude="36.19"/>
+<d cname="常德" value="152" longitude="111.69" latitude="29.05"/>
+<d cname="保定" value="153" longitude="115.48" latitude="38.85"/>
+<d cname="湘潭" value="154" longitude="112.91" latitude="27.87"/>
+<d cname="金华" value="157" longitude="119.64" latitude="29.12"/>
+<d cname="岳阳" value="169" longitude="113.09" latitude="29.37"/>
+<d cname="长沙" value="175" longitude="113" latitude="28.21"/>
+<d cname="衢州" value="177" longitude="118.88" latitude="28.97"/>
+<d cname="廊坊" value="193" longitude="116.7" latitude="39.53"/>
+<d cname="菏泽" value="194" longitude="115.480656" latitude="35.23375"/>
+<d cname="合肥" value="229" longitude="117.27" latitude="31.86"/>
+<d cname="武汉" value="273" longitude="114.31" latitude="30.52"/>
+<d cname="大庆" value="279" longitude="125.03" latitude="46.58"/>
 </c>

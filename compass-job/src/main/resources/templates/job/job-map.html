@@ -3,9 +3,48 @@
    <head>
        <meta name="viewport"
              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <link rel="stylesheet"
+             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+             integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+             crossorigin="anonymous"/>
+
+
    </head>
-   <body style="height: 100%; margin: 0">
-       <div id="container" style="height: 100%"></div>
+   <body style="height: 100%; margin: 10">
+
+       <div id="container" style="height: 100%">
+
+           <nav class="navbar navbar-default form-inline" role="navigation">
+               <div class="container-fluid">
+                   <div class="navbar-header">
+                       <a class="navbar-brand" href="#">Navbar</a>
+                   </div>
+                   <form class="navbar-form left " role="search" >
+                       <select class="custom-select" id="selectCityId">
+                           <option > helloooooo</option>
+                       </select>
+                       <select class="custom-select" id="selectCityId">
+                           <option > helloooooo</option>
+                       </select>
+                       <select class="custom-select" id="selectCityId">
+                           <option > helloooooo</option>
+                       </select>
+
+                       <div class="input-group">
+                           <input type="text" class="form-control" placeholder="Search" name="q">
+                       </div>
+                       <button type="submit" class="btn btn-default">Search</button>
+                   </form>
+               </div>
+               <!-- .container-fluid -->
+           </nav>
+
+           <div id="jobmap" style="height: 100% ;width: 100%;">
+
+       </div>
+
+
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
@@ -15,37 +54,40 @@
        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
-       <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+       <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
        <script>
            $(function(){
                $.ajax({
                    type : "get",
-                   url : "/job/mapData",
+                   url : "/getData/allJobNum",
                    //dataType:"json",
                    cache : false,
                    async : false,
                    success : function(result) {
                        var res = [];
+                       //将Ajax传入的数据转化成JSON格式，便于解析
+                       result = JSON.parse(result)
                        console.log(result)
                        for (var i = 0; i < result.length; i++) {
                            //获得每个城市的统计数量
-                           var count = result[i].val;
+                           var count = result[i].val
                            //获得经纬度
-                           var geo = [ result[i].geos ]
+                           var geo = [ result[i].longitude, result[i].latitude ]
                            res.push({
-                               name : result[i].Cname,
+                               name : result[i].cname,
                                //两个字符串拼接
                                value : geo.concat(count),
                            });
                        }
                        // 基于准备好的dom，初始化echarts实例
-                       var myChart = echarts.init(document.getElementById('first'));
+                       var myChart = echarts.init(document.getElementById('jobmap'));
                        //var option = {
                        myChart.setOption({
                            backgroundColor : '#404a59',
                            title : {
-                               text : '全国用户地理位置分布图',
-                               subtext : 'data from PM25.in',
+                               text : '全国各大城市职位数量分布图',
+                               subtext : '由指南针云计算提供',
                                sublink : 'http://www.pm25.in',
                                left : 'center',
                                textStyle : {
@@ -83,17 +125,17 @@
                                }
                            },
                            series : [ {
-                               //name: 'pm2.5',
+                               //name: '城市',
                                type : 'scatter',
                                coordinateSystem : 'geo',
                                data : res,
-                               symbolSize : function(vals) {
-                                   return vals[2] / 10;
+                               symbolSize : function(val) {
+                                   return val[2] / 4000;
                                },
                                label : {
                                    normal : {
-                                       formatter : '{b}',
-                                       position : 'right',
+                                       formatter : '{c}',
+                                       position : 'left',
                                        show : false
                                    },
                                    emphasis : {
@@ -106,12 +148,12 @@
                                    }
                                }
                            }, {
-                               name : 'Top',
+                               name : '超多',
                                type : 'effectScatter',
                                coordinateSystem : 'geo',
                                data : res.slice(0, 6),
-                               symbolSize : function(vals) {
-                                   return vals[2] / 10;
+                               symbolSize : function(val) {
+                                   return val[2] / 6000;
                                },
                                showEffectOn : 'render',
                                rippleEffect : {
@@ -137,7 +179,7 @@
                        });
                    }
                })
-           });
+           })
        </script>
    </body>
 </html>

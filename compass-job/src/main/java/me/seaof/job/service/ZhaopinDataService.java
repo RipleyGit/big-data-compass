@@ -1,7 +1,5 @@
 package me.seaof.job.service;
 
-import me.seaof.job.vo.City;
-
 import java.util.List;
 
 /**
@@ -15,4 +13,5 @@ public interface ZhaopinDataService {
     String getDataByCity();
 
     void syncDateByCityName(String cname);
+
 }

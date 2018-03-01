@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -55,6 +54,7 @@ public class ZhaopinDataServiceImpl implements ZhaopinDataService{
     public void syncDateByCityName(String key){
         this.doGetJobInfo(key);
     }
+
 
     private String doGetJobInfo(String key) {
         String strBody = null;

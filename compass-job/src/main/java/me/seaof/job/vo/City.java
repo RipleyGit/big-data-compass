@@ -19,8 +19,11 @@ public class City {
 	@XmlAttribute(name = "value")
 	private Integer val;
 
-	@XmlAttribute(name = "geo")
-	private String geos;
+	@XmlAttribute(name = "longitude")
+	private Double longitude;
+
+	@XmlAttribute(name = "latitude")
+	private Double latitude;
 
 	public String getCname() {
 		return cname;
@@ -38,11 +41,19 @@ public class City {
 		this.val = val;
 	}
 
-	public String getGeos() {
-		return geos;
+	public Double getLongitude() {
+		return longitude;
 	}
 
-	public void setGeos(String geos) {
-		this.geos = geos;
+	public void setLongitude(Double longitude) {
+		this.longitude = longitude;
+	}
+
+	public Double getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(Double latitude) {
+		this.latitude = latitude;
 	}
 }
