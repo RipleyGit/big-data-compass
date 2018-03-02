@@ -72,7 +72,7 @@ public class ZhaopinDataServiceImpl implements ZhaopinDataService{
             try {
                 List<City> cityList = GetCityList.listCity();
                 for (City city:cityList) {
-                    String job_url = ZPIN_URL + city.getCname() + "&isfilter=1&p=1&pd=1";
+                    String job_url = ZPIN_URL + city.getCname() + "&sm=0&fl=763&isadv=0&sb=2&isfilter=1&p=1&pd=1";
                     city.setVal(AnalyzeZhaopin.zhaoPinNum(job_url, "UTF-8"));
                 }
                 strBody = JSON.toJSONString(cityList);

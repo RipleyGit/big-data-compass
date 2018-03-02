@@ -1,8 +1,6 @@
 package me.seaof.job.job;
 
-import me.seaof.job.common.GetCityList;
 import me.seaof.job.service.ZhaopinDataService;
-import me.seaof.job.vo.City;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +10,6 @@ import org.slf4j.LoggerFactory;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Creat By Watter @DATA
@@ -36,7 +33,6 @@ public class ZhaoPinInfoSyncJob extends QuartzJobBean {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         logger.info("ZhaoPin Data Sync Job. End！");
     }
 }
