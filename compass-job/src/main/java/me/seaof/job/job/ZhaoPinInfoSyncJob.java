@@ -1,6 +1,8 @@
 package me.seaof.job.job;
 
+import me.seaof.job.service.Impl.CityBaseDataServiceImpl;
 import me.seaof.job.service.ZhaopinDataService;
+import me.seaof.job.vo.City;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Creat By Watter @DATA
@@ -21,18 +24,20 @@ public class ZhaoPinInfoSyncJob extends QuartzJobBean {
     @Autowired
     private ZhaopinDataService zhaopinDataService;
 
+    @Autowired
+    private CityBaseDataServiceImpl cityBaseDataService;
+
     @Override
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         logger.info("ZhaoPin Data Sync Job. Start！");
 
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-        String data = df.format(new Date());
+        List<City> list = cityBaseDataService.cityList();
 
-        try {
-            zhaopinDataService.syncDateByCityName(data);
-        } catch (Exception e) {
-            e.printStackTrace();
+        for (City city:list) {
+            logger.info("Sync Data for :" + city.getCname());
+            zhaopinDataService.syncDateByCityName(city);
         }
+
         logger.info("ZhaoPin Data Sync Job. End！");
     }
 }

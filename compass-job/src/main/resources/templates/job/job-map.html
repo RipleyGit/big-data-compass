@@ -1,21 +1,161 @@
 <!DOCTYPE html>
 <html style="height: 100%">
    <head>
-       <meta name="viewport"
-             content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <meta charset="UTF-8">
+       <!--2、定义viewport-->
+       <meta name="viewport" content="width=device-width,initial-scale=1,
+    user-scalable=no">
+       <!--3、指定跨IE浏览器兼容-->
+       <meta http-equiv="x-ua-compatible" content="IE=edge">
 
        <link rel="stylesheet"
              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
              crossorigin="anonymous"/>
+       <!--4、引入bootstrap.css-->
+       <link rel="stylesheet" href="http://ripley-10057507.file.myqcloud.com/mySelf/bootstrap.css"/>
+       <link rel="stylesheet" href="http://ripley-10057507.file.myqcloud.com/mySelf/myself.css"/>
 
 
    </head>
-   <body style="height: 100%; margin: 10">
+   <body style="height: 100%; margin: 10px">
+   <div class="nav_first" style="margin: 10px">
+       <div class="row">
+           <div class="col-xs-4">
+               <label>职位类别</label>
+               <div>
+                   <select class="form-control">
+                       <option>选择职位</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+                       <option>5</option>
+                   </select>
+               </div>
+           </div>
+           <div class="col-xs-4">
+               <label>行业类别</label>
+               <div>
+                   <select class="form-control">
+                       <option>选择行业</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+                       <option>5</option>
+                   </select>
+               </div>
+           </div>
+           <div class="col-xs-4">
+               <ul class="nav nav-pills" id='seach_job'>
+                   <li role="presentation" class="active" style="margin-bottom: 2px"><a href="#">搜职位</a></li>
+               </ul>
+               <input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入关键字">
+           </div>
+       </div>
+       <div class="more">
+           <div class="row">
+               <div class="col-xs-4">
+                   <label>工作经验</label>
+                   <div>
+                       <select class="form-control">
+                           <option>不限</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                       </select>
+                   </div>
+               </div>
+               <div class="col-xs-4">
+                   <label>学历要求</label>
+                   <div>
+                       <select class="form-control">
+                           <option>不限</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                       </select>
+                   </div>
+               </div>
+               <div class="col-xs-4">
+                   <label>薪资范围</label>
+                   <div class="xinzi">
+                       <input type="text" class="form-control">
+                       <span>到</span>
+                       <input type="text" class="form-control">
+                   </div>
+
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-xs-4">
+                   <label>公司性质</label>
+                   <div>
+                       <select class="form-control">
+                           <option>不限</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                       </select>
+                   </div>
+               </div>
+               <div class="col-xs-4">
+                   <label>公司规模</label>
+                   <div>
+                       <select class="form-control">
+                           <option>不限</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                       </select>
+                   </div>
+               </div>
+               <div class="col-xs-4">
+                   <label>职位类型</label>
+                   <div>
+                       <label class="checkbox-inline">
+                           <input type="checkbox" id="inlineCheckbox1" value="option1"> 兼职
+                       </label>
+                       <label class="checkbox-inline">
+                           <input type="checkbox" id="inlineCheckbox2" value="option2"> 全职
+                       </label>
+                       <label class="checkbox-inline">
+                           <input type="checkbox" id="inlineCheckbox3" value="option3"> 实习
+                       </label>
+                       <label class="checkbox-inline">
+                           <input type="checkbox" id="inlineCheckbox3" value="option3"> 校园
+                       </label>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="row" style="margin-top: 5px">
+           <div class="col-xs-4">
+               <h2 class="label label-primary">
+                   快去设置您的求职信息
+               </h2>
+           </div>
+
+           <div class="col-xs-4" id='more'>
+               加载更多>>
+           </div>
+
+           <div class="col-xs-4">
+               <button type="button" class="btn btn-info">搜工作</button>
+           </div>
+       </div>
+   </div>
+
 
        <div id="container" style="height: 100%">
+
        </div>
 
+       <script type="text/javascript" src="http://ripley-10057507.file.myqcloud.com/mySelf/jquery-1.11.3.js"></script>
+       <script type="text/javascript" src="http://ripley-10057507.file.myqcloud.com/mySelf/bootstrap.min.js"></script>
 
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
@@ -26,7 +166,6 @@
        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
-       <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 
        <script>
            $(function(){
@@ -151,6 +290,18 @@
                        });
                    }
                })
+           });
+           $('#more').on('click',function(){
+               $('.more').toggle(1000);
+               if($('#more').text()=='收起展开<<')
+               {
+                   $('#more').text('加载更多>>');
+               }
+               else{
+                   $('#more').text('收起展开<<');
+               }
+
+
            })
        </script>
    </body>

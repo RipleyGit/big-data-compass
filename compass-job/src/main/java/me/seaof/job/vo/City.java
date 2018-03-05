@@ -25,6 +25,16 @@ public class City {
 	@XmlAttribute(name = "latitude")
 	private Double latitude;
 
+	private Integer aqi;
+
+	public Integer getAqi() {
+		return aqi;
+	}
+
+	public void setAqi(Integer aqi) {
+		this.aqi = aqi;
+	}
+
 	public String getCname() {
 		return cname;
 	}

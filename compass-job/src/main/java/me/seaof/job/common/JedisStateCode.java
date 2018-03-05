@@ -5,6 +5,8 @@ package me.seaof.job.common;
  */
 public class JedisStateCode {
 
-    public static final String ALL_JOB = "_ALL_JOB_NUM"; //Redis所有工作信息数量标识符
+    public static final String ALL_JOB = "ALL_JOB_NUM_"; //Redis所有工作信息数量标识符
+
+    public static final String CITY_INFO = "CITY_INFO_";  //城市信息标识符
 
 }

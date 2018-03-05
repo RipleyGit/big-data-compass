@@ -1,5 +1,7 @@
 package me.seaof.job.service;
 
+import me.seaof.job.vo.City;
+
 import java.util.List;
 
 /**
@@ -10,8 +12,13 @@ public interface ZhaopinDataService {
      * 返回十大城市的职位数量信息
      * @return
      */
-    String getDataByCity();
+    List<City> getDataByCity();
 
-    void syncDateByCityName(String cname);
+
+    /**
+     * 对数据信息进行同步
+     * @param cname
+     */
+    void syncDateByCityName(City c);
 
 }
