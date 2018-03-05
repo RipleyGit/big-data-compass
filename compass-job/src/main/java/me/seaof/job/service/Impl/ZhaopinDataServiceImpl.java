@@ -37,7 +37,7 @@ public class ZhaopinDataServiceImpl implements ZhaopinDataService{
 
     private static final String CITY_AQI = "http://www.pm25.in/api/querys/only_aqi.json?token=5j1znBVAsnSf5xQyNQyq&city=";
 
-    private static final long TIME_OUT = 1800L; // 1800s
+    private static final long TIME_OUT = 36000L; // 1800s
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
@@ -85,9 +85,8 @@ public class ZhaopinDataServiceImpl implements ZhaopinDataService{
             ResponseEntity<String> respString = restTemplate.getForEntity(aqi_url, String.class);
             AqiList aqiList = null;
             if (respString.getStatusCodeValue() == 200) {
-                String str = JSON.toJSONString(respString.getBody());
-                aqiList = mapper.readValue(str, AqiList.class);
-                List<Aqi> list = aqiList.getAqiList();
+                String str = respString.getBody();
+                List<Aqi> list = JSONArray.parseArray(str,Aqi.class);
                 c.setAqi(list.get(list.size()-1).getAqi());
             }
         }
