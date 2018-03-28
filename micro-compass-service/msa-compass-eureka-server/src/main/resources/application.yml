@@ -1,0 +1,13 @@
+server:
+  port: 8090
+eureka:
+  instance:
+    hostname: localhost #实例的主机名称
+  client:
+    registerWithEureka: false #禁用掉客户端功能
+    fetchRegistry: false #禁用客户端配置
+    serviceUrl.defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #定义服务发访问地址
+  server:
+    enable-self-preservation: false #禁用自我防护 防止服务驻留过长
+
+
