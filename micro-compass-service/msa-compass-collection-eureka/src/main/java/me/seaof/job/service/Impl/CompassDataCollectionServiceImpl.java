@@ -5,10 +5,9 @@ import com.alibaba.fastjson.JSONArray;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import me.seaof.job.common.JedisStateCode;
 import me.seaof.job.jsoup.AnalyzeZhaopin;
-import me.seaof.job.service.CityClient;
+import me.seaof.job.service.ZuulClient;
 import me.seaof.job.service.CompassDataCollectionService;
 import me.seaof.job.vo.Aqi;
-import me.seaof.job.vo.AqiList;
 import me.seaof.job.vo.City;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +18,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -44,7 +42,7 @@ public class CompassDataCollectionServiceImpl implements CompassDataCollectionSe
     private RestTemplate restTemplate;
 
     @Autowired
-    public CityClient cityClient;
+    public ZuulClient zuulClient;
 
     /**
      * 同步城市相关信息
@@ -56,7 +54,7 @@ public class CompassDataCollectionServiceImpl implements CompassDataCollectionSe
             ValueOperations<String, String> ops = stringRedisTemplate.opsForValue();
             String key = JedisStateCode.ALL_JOB;
             List<City> list = null;
-            list = cityClient.listCity();
+            list = zuulClient.listCity();
             for (City city:list) {
                 logger.info("Sync Data for :" + city.getCname());
                 this.toJedis(city);

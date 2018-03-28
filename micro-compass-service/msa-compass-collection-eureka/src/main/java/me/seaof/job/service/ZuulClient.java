@@ -9,9 +9,8 @@ import java.util.List;
 /**
  * Created by Watter on 2018-03-22
  */
-@FeignClient("msa-compass-data-eureka")
-public interface CompassDateClient {
-
-    @GetMapping("/getData/allJobNum")
-    String cityData() throws Exception;
+@FeignClient("msa-compass-eureka-zuul")
+public interface ZuulClient {
+    @GetMapping("/city/cities")
+    List<City> listCity() throws Exception;
 }

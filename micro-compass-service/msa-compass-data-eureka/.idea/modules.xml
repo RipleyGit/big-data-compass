@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../msa-compass-city-eureka/msa-compass-city-server.iml" filepath="$PROJECT_DIR$/../msa-compass-city-eureka/msa-compass-city-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../msa-compass-collection-eureka/msa-compass-collection-eureka.iml" filepath="$PROJECT_DIR$/../msa-compass-collection-eureka/msa-compass-collection-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msa-compass-data-eureka.iml" filepath="$PROJECT_DIR$/msa-compass-data-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../msa-compass-eureka-server/msa-compass-eureka-server.iml" filepath="$PROJECT_DIR$/../msa-compass-eureka-server/msa-compass-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../msa-compass-eureka-zuul/msa-compass-eureka-zuul.iml" filepath="$PROJECT_DIR$/../msa-compass-eureka-zuul/msa-compass-eureka-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../msa-compass-jobweb-eureka/msa-compass-jobweb-server.iml" filepath="$PROJECT_DIR$/../msa-compass-jobweb-eureka/msa-compass-jobweb-server.iml" />
+    </modules>
+  </component>
+</project>
