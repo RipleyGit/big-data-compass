@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by Watter on 2018-03-22
  */
-@FeignClient("msa-compass-eureka-zuul")
+@FeignClient(name="msa-compass-eureka-zuul",fallback = DataClientFallback.class)
 public interface ZuulClient {
 
     @GetMapping("/data/getData/allJobNum")

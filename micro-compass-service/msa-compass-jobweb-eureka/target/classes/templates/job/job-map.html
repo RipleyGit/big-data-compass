@@ -193,6 +193,9 @@
                    cache : false,
                    async : false,
                    success : function(result) {
+                       if(result == null || result == ""){
+                           window.location.href = "/exception/error";
+                       }
                        var res = [];
                        //将Ajax传入的数据转化成JSON格式，便于解析
                        result = JSON.parse(result)

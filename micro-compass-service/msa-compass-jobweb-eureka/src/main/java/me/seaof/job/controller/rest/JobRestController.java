@@ -22,6 +22,11 @@ public class JobRestController {
 
     @GetMapping("/allJobNum")
     public String allJobNum(){
+        String str = compassJobService.getCityData();
+        if("redis not data".equals(str)){
+            System.out.println("into hystris");
+            return null;
+        }
         return compassJobService.getCityData();
     }
 }
