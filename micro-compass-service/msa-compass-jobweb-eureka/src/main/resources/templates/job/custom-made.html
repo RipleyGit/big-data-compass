@@ -1,91 +1,138 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html style="height: 100%">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style>
-		*{margin:0;padding:0;}
-		body,html{
-			height: 100%;
-		}
-		ul{
-			list-style:none;
-			height: 100%;
-		}
-		ol{
-		list-style:none;
-		position:fixed;
-		left:50px;
-		top:80px;
-		}
-		ul li{
-			height: 100%;	
-		}
-		ol li{
-			list-style:none;
-			border:1px solid black;
-			height: 50px;
-			width: 50px;
-			line-height:50px;
-			text-align:center;
-			cursor:point;
-			
-		}
-	</style>
-	<script src="http://ripley-10057507.file.myqcloud.com/mySelf/animate.js"></script>
-	<script>
-		window.onload=function(){
-			var oul=document.getElementsByTagName("ul")[0];
-			var ool=document.getElementsByTagName("ol")[0];
-			var oulArr=oul.children;
-			var oolArr=ool.children;
-			var target=0;
-			var leader=0;
-			var timer=null;
-			var colorArr=["pink","red","yellow","blue","green",]
-			for(var i=0;i<colorArr.length;i++){
-				oulArr[i].style.backgroundColor=colorArr[i];
-				oolArr[i].style.backgroundColor=colorArr[i];
-				oolArr[i].index=i;
-				oolArr[i].onclick=function(){
-					target=oulArr[this.index].offsetTop;
-					console.log(target);
-					clearInterval(timer);
-					timer=setInterval(function(){
-						var step=(target-leader)/10;
-						step=step>0?Math.ceil(step):Math.floor(step);
-						leader=leader+step;
-						console.log(leader);
-						window.scrollTo(0,leader);
-						if(Math.abs(target-leader)<=Math.abs(step)){
-							window.scrollTo(0,target);
-							clearInterval(timer);
-						}
-					},25);
-				}
-				
-			}
-		}
-		window.onscroll=function(){
-					leader=scroll().top;
-					
-				}
-	</script>
+	<meta charset="utf-8">
+	<link rel="stylesheet"	href="http://ripley-10057507.file.myqcloud.com/mySelf/style-custom.css"/>
+
 </head>
-<body>
-	<ul>
-		<li>鞋子区域</li>
-		<li>帽子区域</li>
-		<li>袜子区域</li>
-		<li>衣服区域</li>
-		<li>皮包区域</li>
-	</ul>
-	<ol>
-		<li>鞋子</li>
-		<li>帽子</li>
-		<li>袜子</li>
-		<li>衣服</li>
-		<li>皮包</li>
-	</ol>
+<body style="height: 100%; margin: 0">
+<ul>
+	<li>
+		<div class="pannel">
+			<div class="left">
+				<h1>您应聘职位各城市职位分布情况</h1>
+				<p>这是一份根据您输入的条件系统通过分析各大网站上的招聘信息，选取发布招聘职位数量前十的城市信息并绘制成图表为您展示。</p>
+			</div>
+			<div class="right">
+				<div id="echart-bar" style="height: 100%"></div>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="pannel">
+			<div class="right">
+				<div id="echart-line" style="height: 100%"></div>
+			</div>
+			<div class="left">
+				<h1>您应聘职位各城市平均薪资分布</h1>
+				<p>我们对排名前十的城市进行计算分析，得出每个城市的该职位的薪资情况</p>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="pannel">
+			<div class="left">
+				<h1>目标城市发展状况</h1>
+				<p>对排名中的数据，我们计算其近十年来的发展状况，根据发展状况您可以快速了解到城市发展情况。（数据来自源虞国家统计局官网）</p>
+			</div>
+			<div class="right">
+				<div id="echart-stack" style="height: 100%"></div>
+
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="pannel">
+			<div class="right">
+
+				<div id="echart-estate" style="height: 100%"></div>
+
+			</div>
+			<div class="left">
+				<h1>目标城市空气环境指数</h1>
+				<p>为啦让您更好的工作生活，我们还提供啦对各个城市的空气质量实时监控的报告，让您对未来城市的了解更加全面。（数据来源于PM2.5空气质量检测官网）</p>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="pannel">
+			<div class="left">
+				<h1>职位预测分析最终报告</h1>
+				<p>结合上述所有数据和您对未来就业城市的期许，我们通过计算预测出您最适合的城市是：</p><h1 style="center">杭州</h1>
+			</div>
+			<div class="right">
+				<div id="echart-pie" style="height: 100%"></div>
+			</div>
+		</div>
+	</li>
+</ul>
+<ol>
+	<li>职位分布</li>
+	<li>薪资水平</li>
+	<li>发展状况</li>
+	<li>空气质量</li>
+	<li>综合评测</li>
+</ol>
+
+
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+
+<script type="text/javascript" th:src="@{/js/echart-bar.js}"></script>
+<script type="text/javascript" th:src="@{/js/echart-stack.js}"></script>
+<script type="text/javascript" th:src="@{/js/echart-pie.js}"></script>
+<script type="text/javascript" th:src="@{/js/echart-line.js}"></script>
+<script type="text/javascript" th:src="@{/js/echart-estate.js}"></script>
+<script type="text/javascript">
+    window.onload=function(){
+        var oul=document.getElementsByTagName("ul")[0];
+        var ool=document.getElementsByTagName("ol")[0];
+        var oulArr=oul.children;
+        var oolArr=ool.querySelectorAll("li");
+        var target=0;
+        var leader=0;
+        var timer=null;
+
+        for(var i=0;i<oolArr.length;i++){
+
+            oolArr[i].index=i;
+            oolArr[0].className = "current";
+            oolArr[i].onclick=function(){
+
+                for(var j=0;j<oolArr.length;j++){
+                    oolArr[j].className = "";
+                }
+                this.className = "current";
+
+                target=oulArr[this.index].offsetTop;
+                console.log(target);
+                clearInterval(timer);
+                timer=setInterval(function(){
+                    var step=(target-leader)/10;
+                    step=step>0?Math.ceil(step):Math.floor(step);
+                    leader=leader+step;
+                    console.log(leader);
+                    window.scrollTo(0,leader);
+                    if(Math.abs(target-leader)<=Math.abs(step)){
+                        window.scrollTo(0,target);
+                        clearInterval(timer);
+                    }
+                },25);
+            }
+
+        }
+    }
+    window.onscroll=function(){
+        leader=scroll().top;
+
+    }
+</script>
 </body>
 </html>
